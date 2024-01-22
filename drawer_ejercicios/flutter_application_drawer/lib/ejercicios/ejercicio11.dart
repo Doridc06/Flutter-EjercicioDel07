@@ -52,6 +52,7 @@ class _MyFormState extends State<MyForm> {
       await prefs.setStringList('detalles', [nombre, edad]);
 
       // Mostrar un SnackBar con el mensaje de éxito
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Datos guardados correctamente'),
@@ -94,7 +95,7 @@ class _MyFormState extends State<MyForm> {
       }
     } catch (e) {
       // Manejar cualquier error que pueda ocurrir al recuperar datos
-      print('Error al recuperar datos: $e');
+      ('Error al recuperar datos: $e');
     }
   }
 
