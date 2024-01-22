@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_drawer/ejercicios/ejercicio09.dart';
 import 'package:flutter_application_drawer/ejercicios/ejercicio10.dart';
+import 'package:flutter_application_drawer/ejercicios/ejercicio11.dart';
+import 'package:flutter_application_drawer/ejercicios/ejercicio12.dart';
 
 void main() {
   runApp(const MyApp());
@@ -67,6 +69,44 @@ class MyHomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const RandomColors(),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              Container(
+                color: const Color.fromARGB(255, 183, 95, 227),
+                child: ListTile(
+                  title: const Text(
+                    'Ejercicio 11 - Formulario Nombre y edad',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const FormularioNombreEdad(),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              Container(
+                color: const Color.fromARGB(255, 183, 95, 227),
+                child: ListTile(
+                  title: const Text(
+                    'Ejercicio 12 - Juego de encontrar el número',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const JuegoEncontrarNumero(),
                       ),
                     );
                   },
